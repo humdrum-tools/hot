@@ -1,0 +1,36 @@
+
+<div id="example"></div>
+
+<div style="height:50px"></div>
+
+<pre class="script"><code id="script"></code></pre>
+
+<script>
+// vim: ts=3
+
+//////////////////////////////
+//
+// fillExample --
+//
+
+function fillExample() {
+	var scripts = document.querySelectorAll("script");
+	if (scripts.length == 0) {
+		console.log("NO SCRIPTS");
+		return;
+	}
+	var content = scripts[scripts.length-1].textContent;
+	var element = document.querySelector("#script");
+	if (!element) {
+		console.log("NO SCRIPT ELEMENTS");
+		return;
+	}
+	element.innerHTML = content;
+}
+document.addEventListener("DOMContentLoaded", function() {
+	fillExample();
+});
+</script>
+
+
+

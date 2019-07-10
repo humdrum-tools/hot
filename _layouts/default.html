@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	{% include head/head.html %}
+</head>
+<body class="preview-page">
+
+<div class="container-fluid h-100">
+<div class="row justify-content-between h-100">
+
+
+	{% if page.title %}
+		<h1>{{page.title}}<hr noshade></h1>
+		<div style="height:40px;"></div>
+	{% endif %}
+
+
+	{% if page.description %}
+		<p>{{page.description}}</p>
+		<div style="height:50px;"></div>
+	{% endif %}
+
+	{% if page.test %}
+		{% include tests.html %}
+	{% endif %}
+
+	{{content}}
+
+</div>
+</div>
+
+</body>
+</html>
