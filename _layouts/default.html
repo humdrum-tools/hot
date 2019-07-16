@@ -11,17 +11,18 @@
 
 	{% if page.title %}
 		<h1>{{page.title}}<hr noshade></h1>
-		<div style="height:40px;"></div>
+		<div style="width:100%; height:20px;"></div>
 	{% endif %}
 
 
 	{% if page.description %}
 		<p>{{page.description}}</p>
-		<div style="height:50px;"></div>
+		<div style="width:100%; height:30px;"></div>
 	{% endif %}
 
 	{% if page.test %}
 		{% include tests.html %}
+		<div style="width:100%; height:10px;"></div>
 	{% endif %}
 
 	{{content}}

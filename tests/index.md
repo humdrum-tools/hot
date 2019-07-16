@@ -10,7 +10,8 @@ permalink: /index.html
 <li> <a href="test-header.html">Column header titles</a></li>
 <li> <a href="test-ignored-columns.html">Ignoring columns in input array</a></li>
 <li> <a href="test-object.html">Creating a spreadsheet from a list of columns</a></li>
-<li> <a href="test-object-function.html">Extracting sub-object information for columns. </a></li>
+<li> <a href="test-object-function.html">Extracting sub-object information for columns</a></li>
+<li> <a href="test-object-order.html">Seting the column position of object lists</a></li>
 </ul>
 
 
