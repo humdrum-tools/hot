@@ -21,18 +21,27 @@ var myData = document.getElementById("source").innerText.trim()
     .map(function(l) { return l.split("\t"); }),
    cols = myData.reduce(function(p, row) { return Math.max(row.length, p); }, 0),
    merge = myData.reduce(function(m, row, i) {
-     var p = 0, e;
-     while ((e = row.indexOf("", p)) > 0) {
-       s = e - 1;
-       e++;
-       while (e < row.length && row[e] === "") e++;
+     if (row.length > 0 && row[0].substring(0, 2) === "!!") {
        m.push({
-        row: i,
-        col: s,
-        colspan: e - s,
-        rowspan: 1
+         row: i,
+         col: 0,
+         colspan: cols,
+         rowspan: 1
        });
-       p = e;
+     } else {       
+       var p = 0, e;
+       while ((e = row.indexOf("", p)) > 0) {
+         s = e - 1;
+         e++;
+         while (e < row.length && row[e] === "") e++;
+         m.push({
+          row: i,
+          col: s,
+          colspan: e - s,
+          rowspan: 1
+         });
+         p = e;
+       };
      };
      return m;
     }, []);
