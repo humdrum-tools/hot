@@ -2,7 +2,7 @@
 test: true
 vim: ts=3:nowrap
 title: Colorized kern example
-permalink: /test-colorize.html
+permalink: /test-color.html
 ---
 
 <style>

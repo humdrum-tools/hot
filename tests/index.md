@@ -13,5 +13,5 @@ permalink: /index.html
 <li> <a href="test-object-function.html">Extracting sub-object information for columns</a></li>
 <li> <a href="test-object-order.html">Seting the column position of object lists</a></li>
 <li> <a href="test-krn.html">Humdrum file test</a></li>
-<li> <a href="test-colorize.html">Colorizing a Humdrum file</a></li>
+<li> <a href="test-color.html">Colorizing a Humdrum file</a></li>
 </ul>
